@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { PokemonDetails as PokemonDetailsType } from '@/app/types/pokemon'
+import { PokemonDetails as PokemonDetailsType } from '@/types/pokemon'
 
 type PokemonDetailsProps = {
   pokemon: PokemonDetailsType
@@ -12,7 +12,7 @@ export default function PokemonDetails({ pokemon }: PokemonDetailsProps) {
       <Link href="/" className="text-blue-500 hover:underline mb-4 inline-block">
         &larr; Back to Pokédex
       </Link>
-      <div className="bg-white text-black rounded-lg shadow-md overflow-hidden">
+      <div className="bg-white  text-black rounded-lg shadow-md overflow-hidden">
         <div className="md:flex">
           <div className="md:w-1/3 bg-gray-100 p-4">
             <Image

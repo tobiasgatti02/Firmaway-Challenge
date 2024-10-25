@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Pokemon } from '@/app/types/pokemon'
+import { Pokemon } from '@/types/pokemon'
 
 type PokemonCardProps = {
   pokemon: Pokemon
