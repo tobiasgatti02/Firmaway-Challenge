@@ -13,7 +13,7 @@ export default function SearchBar() {
   }
 
   return (
-    <form onSubmit={handleSearch} className="mb-8 mx-64">
+    <form onSubmit={handleSearch} className="mb-8">
       <input
         type="text"
         value={query}
