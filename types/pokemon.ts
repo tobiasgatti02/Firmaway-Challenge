@@ -1,4 +1,5 @@
 export interface Pokemon {
+    types: any
     id: number
     name: string
     image: string
