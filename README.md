@@ -36,8 +36,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente en tu máquina loc
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/your-username/pokemon-explorer.git
-   cd pokemon-explorer
+   git clone https://github.com/tobiasgatti02/Firmaway-Challenge.git
    ```
 
 2. Instala las dependencias:
