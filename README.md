@@ -3,6 +3,7 @@
 ## Tabla de Contenidos
 
 - [Características](#características)
+- [Deploy](#deploy)
 - [Requisitos Previos](#requisitos-previos)
 - [Instalación](#instalación)
 - [Ejecutar la Aplicación](#ejecutar-la-aplicación)
@@ -11,7 +12,6 @@
 - [Integración con API](#integración-con-api)
 - [Optimizaciones de Rendimiento](#optimizaciones-de-rendimiento)
 - [Accesibilidad](#accesibilidad)
-- [Deploy](#deploy)
 - [Mejoras Futuras](#mejoras-futuras)
 
 ## Características
