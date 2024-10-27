@@ -80,7 +80,7 @@ export async function fetchPokemonDetails(id: string): Promise<PokemonDetails> {
 
 export async function fetchPokemonTypes(): Promise<string[]> {
   const response = await fetch(`${API_BASE_URL}/type`, {
-    next: { revalidate: 86400 } // Cache for 24 hours
+    next: { revalidate: 86400 } 
   })
   const data = await response.json()
   return data.results.map((type: any) => type.name)
