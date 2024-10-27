@@ -1,7 +1,5 @@
 # CHALLENGE POKEAPI
 
-Pokémon Explorer es una aplicación web que permite a los usuarios navegar y buscar Pokémon, ver sus detalles y filtrarlos por tipo. Este proyecto está construido usando Next.js, React, TypeScript y Tailwind CSS.
-
 ## Tabla de Contenidos
 
 - [Características](#características)
