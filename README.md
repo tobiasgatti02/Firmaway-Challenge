@@ -11,6 +11,7 @@
 - [Integración con API](#integración-con-api)
 - [Optimizaciones de Rendimiento](#optimizaciones-de-rendimiento)
 - [Accesibilidad](#accesibilidad)
+- [Deploy](#deploy)
 - [Mejoras Futuras](#mejoras-futuras)
 
 ## Características
@@ -61,7 +62,7 @@ npm start
 ## Estructura del Proyecto
 
 ```
-pokemon-explorer/
+firmaway-challenge/
 ├── app/
 │   ├── api/
 │   │   └── pokemon/
@@ -129,6 +130,14 @@ Hemos implementado varias características de accesibilidad:
 2. Uso apropiado de atributos ARIA donde sea necesario
 3. Soporte para navegación por teclado
 4. Ratios de contraste de color que cumplen con los estándares WCAG 2.1 AA
+
+## Deploy
+
+La aplicación web fue desplegada utilizando Vercel.
+
+Link para el deploy: [Firmaway-Challenge][1]
+
+[1]:https://firmaway-challenge.vercel.app/          "Firmaway-Challenge"
 
 ## Mejoras Futuras
 
