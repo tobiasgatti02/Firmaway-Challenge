@@ -12,12 +12,11 @@ interface PageProps {
   params: Promise<{ id: string }>
 }
 
-export default function PokemonPage({ params }: { params: { id: string } }) {
+export default function PokemonPage({ params }: PageProps) {
   const searchParams = useSearchParams()
   const currentPage = searchParams.get('page') || '1'
   const currentType = searchParams.get('type') || ''
   
-  // Construir la URL de retorno con los parámetros guardados
   const backUrl = `/?page=${currentPage}${currentType ? `&type=${currentType}` : ''}`
   
   const [pokemon, setPokemon] = useState<PokemonDetails | null>(null)
@@ -26,8 +25,8 @@ export default function PokemonPage({ params }: { params: { id: string } }) {
   useEffect(() => {
     const loadPokemon = async () => {
       try {
-        params = await params
-        const data = await fetchPokemonDetails(params.id)
+        const resolvedParams = await params
+        const data = await fetchPokemonDetails(resolvedParams.id)
         setPokemon(data)
       } catch (error) {
         console.error('Error loading pokemon:', error)
@@ -37,7 +36,7 @@ export default function PokemonPage({ params }: { params: { id: string } }) {
     }
 
     loadPokemon()
-  }, [])
+  }, [params])
 
   if (loading || !pokemon) {
     return <PokemonDetailsSkeleton />

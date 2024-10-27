@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import PokemonCard from './PokemonCard'
 import PokemonCardSkeleton from './PokemonCardSkeleton'
 import { useSearchParams, useRouter } from 'next/navigation'
@@ -25,7 +25,6 @@ export default function PokemonList() {
 
   const totalPages = data ? Math.ceil(data.total / ITEMS_PER_PAGE) : 0
 
-  // Efecto para redirigir a la página 1 cuando no hay resultados
   useEffect(() => {
     if (data && data.total === 0 && page > 1) {
       const params = new URLSearchParams(searchParams)
