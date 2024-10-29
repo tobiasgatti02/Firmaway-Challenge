@@ -102,6 +102,8 @@ firmaway-challenge/
 
 3. **Diseño Responsivo**: La UI está diseñada para ser responsiva y funcionar bien en varios tamaños de pantalla, desde dispositivos móviles hasta computadoras de escritorio.
 
+4. **Datos**: Los datos se obtienen de la API, y el usuario lo que ve, son datos dinámicos, es decir, no están guardados en una base de datos, si estuviesen en una base de datos, éstos datos se mostrarían al cliente "más rápido".
+
 ## Integración con API
 
 La aplicación se integra con la PokéAPI (https://pokeapi.co/) para obtener datos de Pokémon. Implemente las siguientes llamadas a la API:
