@@ -22,7 +22,8 @@
 - Ver información detallada de cada Pokémon
 - Diseño responsivo para varios tamaños de pantalla
 - Utilizacion de cache
-- Uso del Partial-Pre-Rendering (PPR)
+- Uso del Partial-Pre-Rendering (PPR) esta feature hace alusión a si en un futuro necesito datos frescos, se utilizaria PPR, por
+  como esta modelado el sistema, no tiene de mucha utilidad.
 
 ## Requisitos Previos
 
